@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".loginregist.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/bluebg"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Buat akun baru anda!"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/bluesoft"
+        android:textSize="20dp"
+        android:layout_marginTop="-20dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded20"
+        android:hint="Nama Lengkap"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_uname"
+        android:padding="12dp" />
+
+    <EditText
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded20"
+        android:hint="Nama Pengguna"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_uname"
+        android:padding="12dp" />
+
+    <EditText
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded20"
+        android:hint="Alamat Email"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_email"
+        android:padding="12dp" />
+
+    <EditText
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etKusuka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded20"
+        android:hint="NIK/No.Kusuka"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_number"
+        android:padding="12dp" />
+
+    <EditText
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded20"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_lock"
+        android:padding="12dp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded20"
+        android:hint="Konfirmasi Kata Sandi"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_lock"
+        android:padding="12dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="Daftar"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

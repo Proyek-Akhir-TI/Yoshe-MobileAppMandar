@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".loginregist.ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="Back Icon"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/icon_back"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Data Pengguna"
+                android:textColor="@color/bluebg"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarLayout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appBarLayout"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nama Lengkap : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yoshe Naomi"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nama Pengguna : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="yoshenaomi"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Alamat E-Mail : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="yoshe@gmail.com"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Peran : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRole"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="nelayan"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nama Kelompok Nelayan : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_groupname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="Marina Boom"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nama Perahu Nelayan : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_boatname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="Perahu Merkar Jaya"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nomor Induk Berusaha : "
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_nib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="133546456886"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Nomor Kartu Pelaku Usaha Kelautan dan Perikanan :"
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_kusuka"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="133546456886"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="NPWP :"
+                    android:textColor="@color/bluebg"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_npwp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_rounded20"
+                    android:padding="12dp"
+                    android:text="133546456886"
+                    android:textColor="@color/bluebg"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+
+

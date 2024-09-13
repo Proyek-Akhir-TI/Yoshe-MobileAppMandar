@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- permissions for app -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mandar_app"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".kelompok.EditKelompokActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kelompok.AddKelompokActivity"
+            android:exported="false" />
+        <activity
+            android:name=".kelompok.KelompokActivity"
+            android:exported="false" />
+        <activity
+            android:name=".perahu.PerahuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".rapat.RapatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nelayan.NelayanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nelayan.DetailNelayanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bbm.BBMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bbm.AddBBMActivity"
+            android:exported="false" />
+        <activity
+            android:name=".production.ProductionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".production.AddProductionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".loginregist.RegisterActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".loginregist.ProfileActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".loginregist.LoginActivity"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

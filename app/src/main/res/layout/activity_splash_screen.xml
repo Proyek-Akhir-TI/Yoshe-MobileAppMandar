@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/main"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-210dp"
+        android:src="@drawable/bgataslogin" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KUD MANDAR BERKAH BAHARI"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/bluebg"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Melangkah Maju Bersama Nelayan Mandar"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="100dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/bgbawahlogin"/>
+
+</LinearLayout>

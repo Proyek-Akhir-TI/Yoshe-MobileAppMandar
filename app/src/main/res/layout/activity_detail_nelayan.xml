@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    tools:context=".nelayan.DetailNelayanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="Back Icon"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toEndOf="@+id/icon_back"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Detail Data Nelayan"
+                android:textColor="@color/bluebg"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/bluebg"
+                android:id="@+id/tv_fisherman_name"
+                android:text="Ibnu Yazid"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Kelompok Nelayan"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:textColor="#555555"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text=":"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/tv_group_name"
+                        android:layout_weight="1"
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Kelompok Nelayan"
+                        android:layout_marginStart="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="Nama Perahu"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:textColor="#555555"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text=":"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/tv_boat_name"
+                        android:layout_weight="1"
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="Perahu Lancar Jaya"
+                        android:layout_marginStart="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="NIB"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:textColor="#555555"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text=":"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/tv_nib"
+                        android:layout_weight="1"
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="123121651262161"
+                        android:layout_marginStart="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="NPWP"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:textColor="#555555"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text=":"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/tv_npwp"
+                        android:layout_weight="1"
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="12442365744436"
+                        android:layout_marginStart="10dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+                    <TextView
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text="KUSUKA"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:textColor="#555555"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsbold"
+                        android:text=":"
+                        android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:id="@+id/tv_kusuka"
+                        android:layout_weight="1"
+                        android:textColor="@color/bluebg"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:text="1234653477357"
+                        android:layout_marginStart="10dp"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
